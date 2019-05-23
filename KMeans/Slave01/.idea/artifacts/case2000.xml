@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="case2000">
+    <output-path>$PROJECT_DIR$/out/artifacts/case2000</output-path>
+    <root id="archive" name="Slave01.jar">
+      <element id="module-output" name="Slave01" />
+    </root>
+  </artifact>
+</component>

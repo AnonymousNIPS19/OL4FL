@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="EC_Master:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c22d963-40e9-470c-9ef7-63aede89fcfa" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1286256543">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="33" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.100" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.149" value="1" />
+          <entry key="project.open.time.153" value="1" />
+          <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.18" value="6" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.195" value="1" />
+          <entry key="project.open.time.2" value="10" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.23" value="4" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.267" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.41" value="3" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.63" value="2" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.68" value="2" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.71" value="2" />
+          <entry key="project.open.time.72" value="3" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.77" value="1" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.81" value="1" />
+          <entry key="project.open.time.82" value="1" />
+          <entry key="project.open.time.83" value="1" />
+          <entry key="project.open.time.907" value="1" />
+          <entry key="project.open.time.93" value="1" />
+          <entry key="project.open.time.96" value="1" />
+          <entry key="project.opened" value="89" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="10" />
+          <entry key="html" value="1" />
+          <entry key="java" value="280" />
+          <entry key="png" value="7" />
+          <entry key="txt" value="591" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="10" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="7" />
+          <entry key="JAVA" value="280" />
+          <entry key="PLAIN_TEXT" value="591" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="1" />
+          <entry key="java" value="4812" />
+          <entry key="txt" value="193" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="4812" />
+          <entry key="PLAIN_TEXT" value="194" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1976079486">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="28" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="28" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="6" />
+          <entry key="java" value="376" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="376" />
+          <entry key="PLAIN_TEXT" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="587425795">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="8" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="28" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="28" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="EC_Master" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SVM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mabwithcost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SVMMastercost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="222" column="1" lean-forward="true" selection-start-line="222" selection-start-column="1" selection-end-line="222" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SVMMasterAsync.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="272" selection-start-line="272" selection-end-line="272" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Bandit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data()</find>
+      <find>aparaMtoS</find>
+      <find>Action</find>
+      <find>center1</find>
+      <find>System.out.println</find>
+      <find>clon</find>
+      <find>5</find>
+      <find>6</find>
+      <find>2</find>
+      <find>clo</find>
+      <find>100</find>
+      <find />
+      <find>updateEstimate</find>
+      <find>DBI: 50</find>
+      <find>kkk</find>
+      <find>kk</find>
+      <find>15</find>
+      <find>k</find>
+      <find>timeout</find>
+      <find>Thread-0</find>
+      <find>double</find>
+      <find>Double</find>
+      <find>81092</find>
+      <find>Float</find>
+      <find>float</find>
+      <find>inputstream</find>
+      <find>81920</find>
+      <find>ByteBuffer</find>
+      <find>available</find>
+      <find>f1</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>float</replace>
+      <replace>Float</replace>
+      <replace>Double</replace>
+      <replace>double</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/190325/kddsync(0,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190325/kddsync(1,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190325/kddsync(3,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190325/kddsync(9,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190325/kddasync(6,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190325/kddasync(7,2000).txt" />
+        <option value="$PROJECT_DIR$/src/KMeanswithCost1.java" />
+        <option value="$PROJECT_DIR$/src/190327/s1sync(0,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1async(0,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1async(1,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1async(9,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1sync(9,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1sync(8,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1async(5,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1async(4,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1async(20,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1sync(20,300).txt" />
+        <option value="$PROJECT_DIR$/src/190327/s1sync(15,300).txt" />
+        <option value="$PROJECT_DIR$/src/random.java" />
+        <option value="$PROJECT_DIR$/src/190401/kddsync(0,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190401/kddrandom(5,8000).txt" />
+        <option value="$PROJECT_DIR$/src/190401/kddrandom(0,8000).txt" />
+        <option value="$PROJECT_DIR$/src/KMeansMsterRandom.java" />
+        <option value="$PROJECT_DIR$/src/190402/kddrandom(0,2000).txt" />
+        <option value="$PROJECT_DIR$/src/190402/kddrandom(5,500).txt" />
+        <option value="$PROJECT_DIR$/src/190402/kddrandom(1,500).txt" />
+        <option value="$PROJECT_DIR$/src/KMeansMasterAsyncRandom.java" />
+        <option value="$PROJECT_DIR$/src/190413/kdd(1000,0).txt" />
+        <option value="$PROJECT_DIR$/src/190413/kdd(1000,1).txt" />
+        <option value="$PROJECT_DIR$/src/communication/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/190413/kdd(1000,4).txt" />
+        <option value="$PROJECT_DIR$/src/190415/kdd(1000,1).txt" />
+        <option value="$PROJECT_DIR$/src/190415/kdd(1000,4).txt" />
+        <option value="$PROJECT_DIR$/src/case2/kdd(1000,2).txt" />
+        <option value="$PROJECT_DIR$/src/case2/kdd(1000,1).txt" />
+        <option value="$PROJECT_DIR$/src/case3/kdd(1000,5).txt" />
+        <option value="$PROJECT_DIR$/src/KMeansMasterAsynccost.java" />
+        <option value="$PROJECT_DIR$/src/docker/kddsync(1,2,3,4,5).txt" />
+        <option value="$PROJECT_DIR$/src/communication/utils/ParaStoM.java" />
+        <option value="$PROJECT_DIR$/src/communication/mserver/utils/JsonEncoder.java" />
+        <option value="$PROJECT_DIR$/src/communication/mserver/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/communication/mserver/MServer.java" />
+        <option value="$PROJECT_DIR$/src/KMeans.java" />
+        <option value="$PROJECT_DIR$/src/KMeansMastercost.java" />
+        <option value="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" />
+        <option value="$PROJECT_DIR$/src/SVM.java" />
+        <option value="$PROJECT_DIR$/src/Bandit.java" />
+        <option value="$PROJECT_DIR$/src/mabwithcost.java" />
+        <option value="$PROJECT_DIR$/src/Accuracy.java" />
+        <option value="$PROJECT_DIR$/src/SVMMasterAsync.java" />
+        <option value="$PROJECT_DIR$/src/SVMMastercost.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1186" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>IntegerDivisionInFloatingPointContext</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="EC_Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EC_Master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EC_Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EC_Master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EC_Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EC_Master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EC_Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EC_Master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="mserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558627048705" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HanQing\IdeaProjects\EC_Master\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="communication.utils" />
+      <recent name="utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/communication/mserver" />
+      <recent name="$PROJECT_DIR$/src/communication" />
+      <recent name="$PROJECT_DIR$/src/docker" />
+      <recent name="C:\Users\HanQing\IdeaProjects\EC_Master\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SVMMasterAsync">
+    <configuration name="KMeansMasterAsyncRandom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KMeansMasterAsyncRandom" />
+      <module name="EC_Master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMeansMasterAsynccost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KMeansMasterAsynccost" />
+      <module name="EC_Master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMeansMster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KMeansMster" />
+      <module name="EC_Master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SVMMasterAsync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SVMMasterAsync" />
+      <module name="EC_Master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SVMMastercost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SVMMastercost" />
+      <module name="EC_Master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SVMMasterAsync" />
+      <item itemvalue="Application.SVMMastercost" />
+      <item itemvalue="Application.KMeansMasterAsynccost" />
+      <item itemvalue="Application.KMeansMasterAsyncRandom" />
+      <item itemvalue="Application.KMeansMster" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SVMMasterAsync" />
+        <item itemvalue="Application.SVMMastercost" />
+        <item itemvalue="Application.KMeansMasterAsynccost" />
+        <item itemvalue="Application.KMeansMster" />
+        <item itemvalue="Application.KMeansMasterAsyncRandom" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c22d963-40e9-470c-9ef7-63aede89fcfa" name="Default Changelist" comment="" />
+      <created>1547182448406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547182448406</updated>
+      <workItem from="1548079151885" duration="926000" />
+      <workItem from="1548080946537" duration="599000" />
+      <workItem from="1548082768618" duration="1110000" />
+      <workItem from="1548118890947" duration="598000" />
+      <workItem from="1548120703321" duration="1452000" />
+      <workItem from="1548122508979" duration="1760000" />
+      <workItem from="1548124615426" duration="1755000" />
+      <workItem from="1548126444490" duration="1741000" />
+      <workItem from="1548128245183" duration="1554000" />
+      <workItem from="1548130065719" duration="427000" />
+      <workItem from="1548135365670" duration="949000" />
+      <workItem from="1548137138292" duration="1749000" />
+      <workItem from="1548138946095" duration="1764000" />
+      <workItem from="1548141048830" duration="1408000" />
+      <workItem from="1548142858503" duration="1714000" />
+      <workItem from="1548144742569" duration="1302000" />
+      <workItem from="1548146901503" duration="116000" />
+      <workItem from="1548147311382" duration="1777000" />
+      <workItem from="1548149200822" duration="33927000" />
+      <workItem from="1548294837320" duration="5040000" />
+      <workItem from="1548312003512" duration="2442000" />
+      <workItem from="1548319185165" duration="2898000" />
+      <workItem from="1548331412783" duration="7559000" />
+      <workItem from="1548381945829" duration="6638000" />
+      <workItem from="1548416577379" duration="4616000" />
+      <workItem from="1548465478009" duration="3763000" />
+      <workItem from="1548500333172" duration="8425000" />
+      <workItem from="1548641407356" duration="15598000" />
+      <workItem from="1548766357897" duration="7369000" />
+      <workItem from="1548814506228" duration="3003000" />
+      <workItem from="1550478533309" duration="2292000" />
+      <workItem from="1550538586374" duration="435000" />
+      <workItem from="1550539623249" duration="17000000" />
+      <workItem from="1550627907839" duration="3036000" />
+      <workItem from="1550651406270" duration="4854000" />
+      <workItem from="1550739745572" duration="6274000" />
+      <workItem from="1550797382616" duration="2559000" />
+      <workItem from="1550817564619" duration="2703000" />
+      <workItem from="1550836457385" duration="687000" />
+      <workItem from="1550840700324" duration="585000" />
+      <workItem from="1550909441180" duration="2977000" />
+      <workItem from="1551058566108" duration="1377000" />
+      <workItem from="1551148137102" duration="9401000" />
+      <workItem from="1551178817675" duration="2900000" />
+      <workItem from="1551257373717" duration="9794000" />
+      <workItem from="1551496451572" duration="1495000" />
+      <workItem from="1551530822501" duration="2856000" />
+      <workItem from="1551767518997" duration="2846000" />
+      <workItem from="1551783131036" duration="17279000" />
+      <workItem from="1551838931971" duration="6575000" />
+      <workItem from="1551922590129" duration="6186000" />
+      <workItem from="1551946396176" duration="7949000" />
+      <workItem from="1551961252900" duration="37375000" />
+      <workItem from="1552113376523" duration="41155000" />
+      <workItem from="1552554581214" duration="594000" />
+      <workItem from="1552561058949" duration="35852000" />
+      <workItem from="1552727322113" duration="1808000" />
+      <workItem from="1552977505632" duration="38358000" />
+      <workItem from="1553239599444" duration="35142000" />
+      <workItem from="1553563703279" duration="7474000" />
+      <workItem from="1553581723734" duration="1561000" />
+      <workItem from="1553585665057" duration="3647000" />
+      <workItem from="1553650928326" duration="1871000" />
+      <workItem from="1553675937295" duration="15124000" />
+      <workItem from="1554107365503" duration="29323000" />
+      <workItem from="1554291895870" duration="6257000" />
+      <workItem from="1554370924893" duration="13000" />
+      <workItem from="1554376587129" duration="2546000" />
+      <workItem from="1555136755722" duration="4058000" />
+      <workItem from="1555144953352" duration="34373000" />
+      <workItem from="1556269597641" duration="552000" />
+      <workItem from="1557236268152" duration="2351000" />
+      <workItem from="1557279929150" duration="5229000" />
+      <workItem from="1557455590294" duration="170000" />
+      <workItem from="1557481305879" duration="3079000" />
+      <workItem from="1557716210872" duration="573000" />
+      <workItem from="1557836817646" duration="394000" />
+      <workItem from="1557837979135" duration="5186000" />
+      <workItem from="1557910825868" duration="1355000" />
+      <workItem from="1557994026305" duration="1158000" />
+      <workItem from="1558007232433" duration="4821000" />
+      <workItem from="1558077537068" duration="6530000" />
+      <workItem from="1558180184574" duration="1647000" />
+      <workItem from="1558234814811" duration="5722000" />
+      <workItem from="1558255138309" duration="1019000" />
+      <workItem from="1558264790934" duration="4231000" />
+      <workItem from="1558335942499" duration="1297000" />
+      <workItem from="1558442386719" duration="3117000" />
+      <workItem from="1558575222540" duration="591000" />
+      <workItem from="1558596686512" duration="897000" />
+      <workItem from="1558603170453" duration="14230000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="600652000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="27" width="1186" height="900" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49712092" visible="true" weight="0.19842657" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5028791" side_tool="true" weight="0.1534937" />
+      <window_info id="Structure" order="6" sideWeight="0.50187266" side_tool="true" weight="0.20452708" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3273196" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.36082473" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974293" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32904884" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50056624" side_tool="true" weight="0.32904884" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3234536" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.5002767" weight="0.47043702" />
+      <window_info anchor="bottom" id="Maven Projects" order="12" sideWeight="0.49943376" weight="0.32904884" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24905184" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32908458" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,3).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,4).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,5).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,5).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,4).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,1).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,2).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,1).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,3).txt" />
+    <entry file="file://$PROJECT_DIR$/src/EpsilonFirst.java" />
+    <entry file="file://$PROJECT_DIR$/src/EpsilonGreedy.java" />
+    <entry file="file://$PROJECT_DIR$/src/ThompsonSampling.java" />
+    <entry file="file://$PROJECT_DIR$/src/kdd_test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/190322/kddasync(4,2000).txt" />
+    <entry file="file://$PROJECT_DIR$/src/190319/kdd1(0,8000).txt" />
+    <entry file="file://$PROJECT_DIR$/src/communication/client/Client.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/server/Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/190319/kdd1(2,2000).txt" />
+    <entry file="file://$PROJECT_DIR$/src/190319/kdd2(1,8000).txt" />
+    <entry file="file://$PROJECT_DIR$/src/190326/kddasync(2,2000).txt" />
+    <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,0).txt" />
+    <entry file="file://$PROJECT_DIR$/src/docker/kddsync(1,2,3,4,5).txt" />
+    <entry file="file://$PROJECT_DIR$/src/190326/kddasync(0,2000).txt" />
+    <entry file="file://$PROJECT_DIR$/src/190327/s1async(5,300).txt" />
+    <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsynccost.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaMtoS.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/SerializeUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaStoM.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/mserver/utils/Para.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/mserver/utils/JsonDecoder.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/mserver/utils/JsonEncoder.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/mserver/MServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/mserver/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/mserver/MParaChannel.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KMeansMster.java" />
+    <entry file="file://$PROJECT_DIR$/src/F1measure.java" />
+    <entry file="file://$PROJECT_DIR$/src/KMeanswithCost1.java" />
+    <entry file="file://$PROJECT_DIR$/src/regretsAsync.txt" />
+    <entry file="file://$PROJECT_DIR$/src/KMeans.java" />
+    <entry file="file://$PROJECT_DIR$/src/DBI.java" />
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mnist_digits_test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mabwithcost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Accuracy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KUBE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bandit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SVM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SVMMasterAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="272" selection-start-line="272" selection-end-line="272" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SVMMastercost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="222" column="1" lean-forward="true" selection-start-line="222" selection-start-column="1" selection-end-line="222" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>EC_Master:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>EC_Master</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
