@@ -1,20 +1,20 @@
 import communication.mserver.MParaChannel;
 import communication.mserver.MServer;
 import communication.utils.Para;
+
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-
-public class KMeansMastercost {
+public class KMeansMasterKUBE {
 
     public static void main(String[] args) throws IOException{
+
         int k =6;
         int miniBatchNum =500;
 
         KMeans readDataKMeans = new KMeans();
         readDataKMeans.readData();
-
 
         MServer server = new MServer(8803);
         new Thread(new Runnable() {
@@ -27,54 +27,31 @@ public class KMeansMastercost {
 
         List<ArrayList<Double>> globalcenter = new ArrayList<>();
         ArrayList<Double> DBI = new ArrayList<Double>();
-        //        f1f1f1
         ArrayList<Double> f1=new ArrayList<Double>();
         List<ArrayList<Double>> oldcenter = new ArrayList<>();
-
-
-        //time
-        int syncio=0;
-        ArrayList<Integer> IO=new ArrayList<Integer>();
-        int sumio=0;
-        ArrayList<Integer> sumIO=new ArrayList<Integer>();
-
-        int synccpu=0;
-        ArrayList<Integer> CPU=new ArrayList<Integer>();
-        int sumcpu=0;
-        ArrayList<Integer> sumCPU=new ArrayList<Integer>();
-
-        int syncsum=0;
-        ArrayList<Integer> sumlist=new ArrayList<Integer>();
-        int sumtime=0;
-        ArrayList<Integer> sumTime=new ArrayList<Integer>();
-
-
         double[] distance = new double[k];
         HashMap<Integer, Integer> armMap = new HashMap<>();
-        armMap.put(0, 50);
+        armMap.put(0, 51);
         armMap.put(1, 40);
-        armMap.put(2, 30);
-        armMap.put(3, 20);
-        armMap.put(4, 10);
-        armMap.put(5, 1);
-        mabwithcost mabwithcost=new mabwithcost();
+        armMap.put(2, 27);
+        armMap.put(3, 18);
+        armMap.put(4, 6);
+        armMap.put(5, 3);
+        KUBE kube = new KUBE();
 
         //同步情况下
         boolean isFirst = true;
         int recycleCount = 0;
         int clientNum = 3;
-        int N = 300;
+        int N = 100;
         int sum = 0;
 
         List<MParaChannel> paraList = new ArrayList<>();
 
-        //
         double[] slavedbi=new double[clientNum];//slave传来的局部DBI
         long[] sendtime=new long[clientNum];//slave传来的上传时间
         long[] uploadtime=new long[clientNum];//上传用时，IO时间
         long[] runtime=new long[clientNum];//局部迭代时间，CPU时间
-        int[] io=new int[clientNum];
-        int[] cpu=new int[clientNum];
 
         while (clientNum != MServer.paraQueue.size()) {
             try {
@@ -94,9 +71,6 @@ public class KMeansMastercost {
         }
         System.out.println("wait for 3 slave in paraQueue");
         paraList.clear();
-
-        KMeans center = new KMeans(k,miniBatchNum);
-        globalcenter = center.getCenter();
 
         Para paraMtoS = new Para();
         paraMtoS.time = 1;
@@ -122,49 +96,16 @@ public class KMeansMastercost {
                 }
             }
 
-            long receiveTime = System.currentTimeMillis();//master接收到的时间
+            long receiveTime = System.nanoTime();//master接收到的时间
 
             KMeans kmeans = new KMeans(
                     paraList.get(0).paraStoM.centerList, paraList.get(1).paraStoM.centerList, paraList.get(2).paraStoM.centerList,
                     paraList.get(0).paraStoM.num, paraList.get(1).paraStoM.num, paraList.get(2).paraStoM.num, k);
 
-                for (int j = 0; j < clientNum; j++) {
-                    runtime[j] = paraList.get(j).paraStoM.runtime;
-                    sendtime[j] = paraList.get(j).paraStoM.sendtime;
-                    uploadtime[j] = receiveTime - sendtime[j];
-                    io[j] = (int)uploadtime[j];
-                    cpu[j] = (int) runtime[j];
-                }
-
-             //time
-            syncio=io[0]+io[1]+io[2];
-            IO.add(syncio);
-            sumio=sumio+syncio;
-            sumIO.add(sumio);
-
-            synccpu=cpu[0]+cpu[1]+cpu[2];
-            CPU.add(synccpu);
-            sumcpu=sumcpu+synccpu;
-            sumCPU.add(sumcpu);
-            syncsum=synccpu+syncio;
-            sumlist.add(syncsum);
-            sumtime=sumtime+syncsum;
-            sumTime.add(sumtime);
-
-            System.out.println("io:" + Arrays.toString(io) + "ns" );
-            System.out.println("cpu:" + Arrays.toString(cpu) + "ns" );
-
-            if (i==0) {
-                mabwithcost.newio = Arrays.stream(io).min().getAsInt();
-                mabwithcost.newcpu = Arrays.stream(cpu).min().getAsInt();
-            }
-            else  {
-                mabwithcost.newio = Arrays.stream(io).max().getAsInt();
-                mabwithcost.newcpu = Arrays.stream(cpu).max().getAsInt();
+            for (int j=0;j<clientNum;j++) {
+                slavedbi[j] = paraList.get(j).paraStoM.DBI;
             }
             paraList.clear();
-
-            long start = System.currentTimeMillis();
             globalcenter = kmeans.getCenter();//获得全局簇中心
 
             //计算两次全局簇中心之间的距离
@@ -174,7 +115,7 @@ public class KMeansMastercost {
                     for (int j = 0; j < globalcenter.get(0).size(); j++) {//计算两点之间的欧式距离
                         distance[t] += (globalcenter.get(t).get(j) - oldcenter.get(t).get(j)) * (globalcenter.get(t).get(j) - oldcenter.get(t).get(j));
                     }
-                    distance[t]= (double) Math.sqrt(distance[t]);
+                    distance[t]=Math.sqrt(distance[t]);
                     System.out.println("distance"+t+":" + distance[t] );
                 }
 
@@ -182,6 +123,7 @@ public class KMeansMastercost {
             for(int j = 0; j < globalcenter.size(); j++){
                 oldcenter.add( (ArrayList<Double>)globalcenter.get(j).clone());
             }
+
 
             //计算评价指标DBI
             ///kkk
@@ -193,16 +135,17 @@ public class KMeansMastercost {
             F1measure f1measure=new F1measure(kmean.train_target,kmean.predict_target);
             f1.add(f1measure.f1);
 
+
             if( isFirst ){
                 isFirst = false;
             } else {
-                mabwithcost.updateEstimate();
+                kube.updateEstimate();
             }
-
+            //根据DBI的值来修改MAB每条臂的分布，从而选出下一次迭代的臂i
 
             int arm = -1;
-            if( mabwithcost.isResourceEnough() ){
-                arm = mabwithcost.mab(1);
+            if( kube.isResourceEnough() ){
+                arm = kube.mab(1);
             }
             else {
                 System.out.println("run out of resource");
@@ -210,9 +153,6 @@ public class KMeansMastercost {
             }
 
             int t = armMap.get(arm);
-            System.out.println("\n\nt"+t);
-            long end = System.currentTimeMillis();
-
 
             paraMtoS.time = t;
             paraMtoS.centerList = globalcenter;
@@ -233,9 +173,10 @@ public class KMeansMastercost {
             System.out.println("异常退出：预计" + N + "次，但只执行了" + (recycleCount+1) + "次");
         }
         HashMap<String, List<Double>> mapRegret = new HashMap<>();
-        mapRegret.put("sync", mabwithcost.regrets);
-        System.out.println("dbi"+DBI);
-        System.out.println("f1"+f1);
+        mapRegret.put("sync", kube.regrets);
+//        System.out.println("\n\nDBI: " + DBI);
+        System.out.println("\n\nF1: " + f1);
+
 
     }
 }

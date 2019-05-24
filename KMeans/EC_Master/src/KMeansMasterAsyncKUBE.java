@@ -2,13 +2,12 @@ import communication.mserver.MParaChannel;
 import communication.mserver.MServer;
 import communication.utils.Para;
 import io.netty.channel.Channel;
+
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-//import utils.WriteToFile;
-
-public class KMeansMasterAsyncDBI {
+public class KMeansMasterAsyncKUBE {
 
     public static void main(String[] args) throws IOException {
 
@@ -28,30 +27,31 @@ public class KMeansMasterAsyncDBI {
 
         List<ArrayList<Double>> globalcenter = new ArrayList<>();
         HashMap<Integer, Integer> armMap = new HashMap<>();
-        armMap.put(0, 50);
+        armMap.put(0, 51);
         armMap.put(1, 40);
-        armMap.put(2, 30);
-        armMap.put(3, 20);
-        armMap.put(4, 10);
-        armMap.put(5, 1);
-
-        HashMap<String, mabwithcost> mapmabwithcost = new HashMap<>();
-        mabwithcost mab1 = new mabwithcost();
-        mab1.allCPU =10000;
-        mapmabwithcost.put("slave1", mab1);
-        mabwithcost mab2 = new mabwithcost();
-        mab2.allCPU = 10000;
-        mapmabwithcost.put("slave2", mab2);
-        mabwithcost mab3 = new mabwithcost();
-        mab3.allCPU = 10000;
-        mapmabwithcost.put("slave3", mab3);
+        armMap.put(2, 27);
+        armMap.put(3, 18);
+        armMap.put(4, 6);
+        armMap.put(5, 3);
+        HashMap<String, KUBE> mapKUBE = new HashMap<>();
+        KUBE kube1 = new KUBE();
+        kube1.allCPU = 1000;
+        kube1.allIO = 50;
+        mapKUBE.put("slave1", kube1);
+        KUBE kube2 = new KUBE();
+        kube2.allCPU = 1000;
+        kube2.allIO = 150;
+        mapKUBE.put("slave2", kube2);
+        KUBE kube3 = new KUBE();
+        kube3.allCPU = 1000;
+        kube3.allIO = 200;
+        mapKUBE.put("slave3", kube3);
 
         HashMap<String, Boolean> mapIsFirst = new HashMap<>();
         mapIsFirst.put("slave1", true);
         mapIsFirst.put("slave2", true);
         mapIsFirst.put("slave3", true);
 
-        //dbi
         HashMap<String, ArrayList<Double>> mapDBI = new HashMap<>();
         ArrayList<Double> mapDBI1=new ArrayList<Double>();
         mapDBI.put("slave1",mapDBI1);
@@ -65,33 +65,19 @@ public class KMeansMasterAsyncDBI {
         mapNum.put("slave2",mapNum2);
         mapNum.put("slave3",mapNum3);
 
-
         KMeans kmeans = new KMeans();
 
         List<ArrayList<Double>> oldCenterList = new ArrayList<ArrayList<Double>>();
         ArrayList<Double> DBI = new ArrayList<Double>();
-        //        f1f1f1
         ArrayList<Double> f1=new ArrayList<Double>();
         List<ArrayList<Double>> oldcenter = new ArrayList<>();
         double[] distance = new double[k];
         int[] oldNum = null;
 
-
         double slavedbi; //slave传来的局部DBI
         long sendtime; //slave传来的上传时间
-        long uploadtime=0; //上传用时，IO时间
-        long runtime=0; //局部迭代时间，CPU时间
-
-        ArrayList<Integer> IO=new ArrayList<Integer>();
-        int sumio=0;
-        ArrayList<Integer> sumIO=new ArrayList<Integer>();
-        ArrayList<Integer> CPU=new ArrayList<Integer>();
-        int sumcpu=0;
-        ArrayList<Integer> sumCPU=new ArrayList<Integer>();
-        int asyncsum=0;
-        ArrayList<Integer> sumlist=new ArrayList<Integer>();
-        int sumtime=0;
-        ArrayList<Integer> sumTime=new ArrayList<Integer>();
+        long uploadtime; //上传用时，IO时间
+        long runtime; //局部迭代时间，CPU时间
 
         //异步情况下
         boolean isFirst = true;
@@ -130,9 +116,9 @@ public class KMeansMasterAsyncDBI {
         paraMtoS.centerList = globalcenter;
         MServer.serverHandler.broadcast(paraMtoS);
 
-
         while( ai < aN || num_stop < 3) {
             ai++;
+
             MParaChannel paraChannel = null;
             try {
                 paraChannel = MServer.paraQueue.take();//阻塞直到有值
@@ -143,27 +129,17 @@ public class KMeansMasterAsyncDBI {
             Para paraStoM = paraChannel.paraStoM;
             Channel socketChannel = paraChannel.socketChannel;
 
-
-            long receivetime = System.currentTimeMillis();
             if( isFirst ){
                 isFirst = false;
                 globalcenter = paraStoM.centerList;
                 oldNum = paraStoM.num;
-                runtime=paraStoM.runtime;
-                sendtime=paraStoM.sendtime;
-                uploadtime=(receivetime-sendtime);
             }else{
                 kmeans.kmeans(paraStoM.centerList, oldCenterList, paraStoM.num, oldNum, k);
+
                 globalcenter = kmeans.getCenter();//获得全局簇中心
                 oldNum = kmeans.arrNum;
-                runtime=paraStoM.runtime;
                 slavedbi=paraStoM.DBI;
-                sendtime=paraStoM.sendtime;
-                uploadtime = receivetime - sendtime;
             }
-
-            int io= (int) uploadtime;
-            int cpu = (int) (runtime);
 
             //计算两次全局簇中心之间的距离
             if(!oldCenterList.isEmpty()) {
@@ -188,21 +164,18 @@ public class KMeansMasterAsyncDBI {
             List<ArrayList<Double>> test_center =kmean.getNewCenter();
             DBI test=new DBI(test_center, kmean.getHelpCenterList());
             DBI.add(test.dbi);
-            //f1f1f1
             F1measure f1measure=new F1measure(kmean.train_target,kmean.predict_target);
             f1.add(f1measure.f1);
-
 
             if( mapIsFirst.get(paraStoM.slaveName) ){
                 mapIsFirst.put(paraStoM.slaveName, false);
             }else {
-                mapmabwithcost.get(paraStoM.slaveName).updateEstimate();
+                mapKUBE.get(paraStoM.slaveName).updateEstimate();
             }
-            System.out.println("paraStoM.slaveName:"+paraStoM.slaveName);
 
-
+            //根据DBI的值来修改MAB每条臂的分布，从而选出下一次迭代的臂i
             int arm = -1;
-            mabwithcost mab = mapmabwithcost.get(paraStoM.slaveName);
+            KUBE kube = mapKUBE.get(paraStoM.slaveName);
 
             ArrayList<Double> mapdbi=mapDBI.get(paraStoM.slaveName);
             int num=mapNum.get(paraStoM.slaveName);
@@ -216,7 +189,6 @@ public class KMeansMasterAsyncDBI {
                 else num=0;
             }
 
-
             if(num==5){
                 aparaMtoS.time = 0;
                 aparaMtoS.centerList = globalcenter;
@@ -224,39 +196,19 @@ public class KMeansMasterAsyncDBI {
                 mapNum.put(paraStoM.slaveName, 0);
             }
             else {
-                if (mab.isResourceEnough()) {
-                    mab.newio = io;
-                    mab.newcpu = cpu;
-
-                    //time
-                    IO.add(mab.newio);
-                    sumio = sumio + mab.newio;
-                    sumIO.add(sumio);
-
-                    CPU.add(mab.newcpu);
-                    sumcpu = sumcpu + mab.newcpu;
-                    sumCPU.add(sumcpu);
-                    asyncsum = mab.newcpu + mab.newio;
-                    sumlist.add(asyncsum);
-                    sumtime = sumtime + asyncsum;
-                    sumTime.add(sumtime);
-
-                    arm = mab.mab(1);
+                if (kube.isResourceEnough()) {
+                    arm = kube.mab(1);
                     int t = armMap.get(arm);
                     aparaMtoS.time = t;
                     aparaMtoS.centerList = globalcenter;
                     MServer.serverHandler.sendOneChannel(socketChannel, aparaMtoS);
                 } else {
                     num_stop++;
-                    System.out.println("num_stop" + num_stop);
                     Para endParaMtoS = new Para();
                     endParaMtoS.state = -1;
                     MServer.serverHandler.sendOneChannel(socketChannel, endParaMtoS);
-
                 }
             }
-
-            if(num_stop==clientNum) break;
 
         }
         System.out.println("ready to stop!!!");
@@ -264,7 +216,6 @@ public class KMeansMasterAsyncDBI {
         endParaMtoS.state = -1;
         MServer.serverHandler.broadcast(endParaMtoS);
         MServer.closeGracefully();
-
 
         System.out.println("END");
         if( aN ==  ai){
@@ -274,9 +225,9 @@ public class KMeansMasterAsyncDBI {
         }
 
         HashMap<String, List<Double>> mapRegret = new HashMap<>();
-        Iterator<Map.Entry<String, mabwithcost>> entries = mapmabwithcost.entrySet().iterator();
+        Iterator<Map.Entry<String, KUBE>> entries = mapKUBE.entrySet().iterator();
         while (entries.hasNext()) {
-            Map.Entry<String, mabwithcost> entry = entries.next();
+            Map.Entry<String, KUBE> entry = entries.next();
             mapRegret.put(entry.getKey(), entry.getValue().regrets);
         }
 

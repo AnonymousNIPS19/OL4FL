@@ -128,29 +128,30 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="30" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="30" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="275" />
+          <entry key="java" value="305" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="275" />
+          <entry key="JAVA" value="305" />
         </counts>
       </usages-collector>
     </session>
@@ -168,11 +169,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/KMeans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="232" column="11" selection-start-line="232" selection-start-column="11" selection-end-line="234" selection-end-column="11" />
+            <state relative-caret-position="420">
+              <caret line="38" column="72" lean-forward="true" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -180,8 +181,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="293" selection-start-line="293" selection-end-line="293" />
+            <state relative-caret-position="45">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KMeansMastercost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,11 +199,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/KMeansMastercost.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DBI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="243" selection-start-line="243" selection-end-line="243" />
+            <state relative-caret-position="120">
+              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              <folding>
+                <element signature="e#1752#1760#0" expanded="true" />
+                <element signature="e#1849#1857#0" expanded="true" />
+                <element signature="e#1946#1954#0" expanded="true" />
+                <element signature="e#2276#2295#0" expanded="true" />
+                <element signature="e#2344#2352#0" expanded="true" />
+                <element signature="e#2470#2478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KMeansMasterKUBE.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -212,8 +248,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>aparaMtoS</find>
-      <find>Action</find>
       <find>center1</find>
       <find>System.out.println</find>
       <find>clon</find>
@@ -242,6 +276,8 @@
       <find>available</find>
       <find>f1</find>
       <find>mapdbi</find>
+      <find>clintNum</find>
+      <find>allcenter</find>
     </findStrings>
     <replaceStrings>
       <replace>float</replace>
@@ -249,13 +285,13 @@
       <replace>Double</replace>
       <replace>double</replace>
       <replace>mapacc</replace>
+      <replace>clientNum</replace>
+      <replace>globalcenter</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/middle.java" />
-        <option value="$PROJECT_DIR$/src/190323/kddasync(3,2000).txt" />
         <option value="$PROJECT_DIR$/src/190323/kddsync(3,2000).txt" />
         <option value="$PROJECT_DIR$/src/190325/kddasync(3,2000).txt" />
         <option value="$PROJECT_DIR$/src/190325/kddasync(2,2000).txt" />
@@ -302,9 +338,11 @@
         <option value="$PROJECT_DIR$/src/communication/mserver/utils/JsonEncoder.java" />
         <option value="$PROJECT_DIR$/src/communication/mserver/ServerHandler.java" />
         <option value="$PROJECT_DIR$/src/communication/mserver/MServer.java" />
-        <option value="$PROJECT_DIR$/src/KMeans.java" />
+        <option value="$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java" />
+        <option value="$PROJECT_DIR$/src/KMeansMasterKUBE.java" />
         <option value="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" />
         <option value="$PROJECT_DIR$/src/KMeansMastercost.java" />
+        <option value="$PROJECT_DIR$/src/KMeans.java" />
       </list>
     </option>
   </component>
@@ -320,10 +358,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="5">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="1196" />
+    <option name="width" value="1186" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -369,20 +407,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="communication" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="EC_Master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EC_Master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="mserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EC_Master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EC_Master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -394,7 +418,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558619829868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558687956862" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -403,11 +427,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/communication/mserver" />
-      <recent name="$PROJECT_DIR$/src/communication" />
-      <recent name="$PROJECT_DIR$/src/docker" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HanQing\IdeaProjects\EC_Master\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -415,7 +435,11 @@
       <recent name="" />
       <recent name="utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/communication/mserver" />
+      <recent name="$PROJECT_DIR$/src/communication" />
+      <recent name="$PROJECT_DIR$/src/docker" />
       <recent name="C:\Users\HanQing\IdeaProjects\EC_Master\src" />
     </key>
   </component>
@@ -586,11 +610,12 @@
       <workItem from="1558596686512" duration="897000" />
       <workItem from="1558603170453" duration="12008000" />
       <workItem from="1558620138949" duration="598000" />
+      <workItem from="1558682417823" duration="3972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="595745000" />
+    <option name="totallyTimeSpent" value="600103000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -602,10 +627,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1196" height="900" extended-state="4" />
+    <frame x="67" y="27" width="1186" height="900" extended-state="5" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712092" visible="true" weight="0.194974" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712092" visible="true" weight="0.19842657" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -614,7 +639,7 @@
       <window_info id="Structure" order="6" sideWeight="0.50187266" side_tool="true" weight="0.20452708" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3273196" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.36082473" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.36082473" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39974293" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,8 +672,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/190415/kdd(500,1).txt" />
-    <entry file="file://$PROJECT_DIR$/src/190415/kdd(500,0).txt" />
     <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,0).txt" />
     <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,2).txt" />
     <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,3).txt" />
@@ -708,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,13 +752,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeansMster.java" />
-    <entry file="file://$PROJECT_DIR$/src/DBI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/F1measure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -748,17 +761,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeanswithCost1.java" />
     <entry file="file://$PROJECT_DIR$/src/regretsAsync.txt" />
-    <entry file="file://$PROJECT_DIR$/src/KMeans.java">
+    <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="232" column="11" selection-start-line="232" selection-start-column="11" selection-end-line="234" selection-end-column="11" />
+        <state relative-caret-position="45">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding>
+            <element signature="e#1752#1760#0" expanded="true" />
+            <element signature="e#1849#1857#0" expanded="true" />
+            <element signature="e#1946#1954#0" expanded="true" />
+            <element signature="e#2276#2295#0" expanded="true" />
+            <element signature="e#2344#2352#0" expanded="true" />
+            <element signature="e#2470#2478#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="293" selection-start-line="293" selection-end-line="293" />
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KMeansMasterKUBE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -767,11 +795,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeansMastercost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="243" selection-start-line="243" selection-end-line="243" />
+        <state relative-caret-position="120">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KMeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="72" lean-forward="true" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
         </state>
       </provider>
     </entry>

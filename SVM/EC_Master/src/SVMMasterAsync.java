@@ -2,16 +2,10 @@ import communication.mserver.MParaChannel;
 import communication.mserver.MServer;
 import communication.utils.Para;
 import io.netty.channel.Channel;
-
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.channels.SocketChannel;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-//import utils.WriteToFile;
 
 public class SVMMasterAsync {
 
@@ -58,12 +52,12 @@ public class SVMMasterAsync {
 
         //dbi
         HashMap<String, ArrayList<Double>> mapAcc = new HashMap<>();
-        ArrayList<Double> mapDBI1=new ArrayList<Double>();
-        mapAcc.put("slave1",mapDBI1);
-        ArrayList<Double> mapDBI2=new ArrayList<Double>();
-        mapAcc.put("slave2",mapDBI2);
-        ArrayList<Double> mapDBI3=new ArrayList<Double>();
-        mapAcc.put("slave3",mapDBI3);
+        ArrayList<Double> mapAcc1=new ArrayList<Double>();
+        mapAcc.put("slave1",mapAcc1);
+        ArrayList<Double> mapAcc2=new ArrayList<Double>();
+        mapAcc.put("slave2",mapAcc2);
+        ArrayList<Double> mapAcc3=new ArrayList<Double>();
+        mapAcc.put("slave3",mapAcc3);
         HashMap<String, Integer> mapNum = new HashMap<>();
         int mapNum1 = 0,mapNum2=0,mapNum3=0;
         mapNum.put("slave1",mapNum1);

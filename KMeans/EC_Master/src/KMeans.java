@@ -52,7 +52,7 @@ class KMeans {
     private List<ArrayList<Double>> Data() throws IOException {
         //读入原始数据
         BufferedReader br=new BufferedReader(new InputStreamReader
-                (new FileInputStream("/home/zjq/KMeans/EC_Master/src/kdd_test.txt")));
+                (new FileInputStream("kdd_test.txt")));
         String data = null;
         List<ArrayList<Double>> dataList = new ArrayList<ArrayList<Double>>();
         while((data=br.readLine())!=null){
@@ -226,13 +226,6 @@ class KMeans {
             newCenters.add(tmp);
         }
 
-        //输出最后聚类结果
-//        for(int i=0;i<k;i++){
-//            System.out.println("\n\nCluster: "+(i+1)+"   size: "+helpCenterList.get(i).size()+" :\n\n");
-//            for(int j=0;j<helpCenterList.get(i).size();j++) {
-//                System.out.println(helpCenterList.get(i).get(j));
-//            }
-//        }
     }
 }
 

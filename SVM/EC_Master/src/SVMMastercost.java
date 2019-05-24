@@ -1,15 +1,10 @@
 import communication.mserver.MParaChannel;
 import communication.mserver.MServer;
 import communication.utils.Para;
-
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-//import utils.WriteToFile;
 
 public class SVMMastercost {
 

@@ -15,16 +15,17 @@ class Accuracy {
     public static ArrayList<Double> alltestY=new ArrayList<>();
     public static ArrayList<ArrayList<Double>> alltestX=new ArrayList<>();
 
-    public void loadData() throws IOException {
+    public void loadData(String filepath) throws IOException {
         //读入原始数据
         BufferedReader br = new BufferedReader(new InputStreamReader
-                (new FileInputStream("mnist_digits_test.txt")));
+                (new FileInputStream(filepath)));
         String data = null;
         while ((data = br.readLine()) != null) {
             String[] fields = data.split("\\|");
             ArrayList<Double> tmpList = new ArrayList<Double>();
             for (int i = 0; i < fields.length - 1; i++)
                 tmpList.add(Double.parseDouble(fields[i]));
+
             alltestY.add(Double.valueOf(fields[fields.length - 1]));
             alltestX.add(tmpList);
         }
@@ -40,7 +41,6 @@ class Accuracy {
         Random rand = new Random();
         testX.clear();
         testY.clear();
-//        ArrayList<Integer> index=new ArrayList<>();
         while(true){
             int k = rand.nextInt(alltestX.size());
             set.add(k);
@@ -58,9 +58,8 @@ class Accuracy {
         return miniBatchNum;
     }
 
-    private int predict(ArrayList<Double> x,float []w)
 
-    {
+    private int predict(ArrayList<Double> x,float []w) {
 
         double pre=0;
 
@@ -80,7 +79,8 @@ class Accuracy {
 
     public Accuracy(){}
 
-    Accuracy(ArrayList<float[]> w, int miniBatchNum) throws IOException {
+    Accuracy(ArrayList<float[]> w,int miniBatchNum) throws IOException {
+
         Accuracy.updateDataListRandom(miniBatchNum);
 
         int right=0;
