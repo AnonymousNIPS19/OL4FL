@@ -9,7 +9,7 @@ public class SVM {
     public ArrayList<float[]> getW_list() { return w_list; }
     public int arrNum;
 
-    //同步时计算全局w
+    // Global update synchronously
     SVM(ArrayList<float[]> w1, ArrayList<float[]> w2, ArrayList<float[]> w3, int num1, int num2, int num3){
         w_list=new ArrayList<>();
 
@@ -26,7 +26,7 @@ public class SVM {
         }
     }
 
-    //异步时计算全局w
+    // Global update asynchronously
     SVM(ArrayList<float[]> w1, ArrayList<float[]> w2, int num1, int num2) {
         w_list=new ArrayList<>();
 

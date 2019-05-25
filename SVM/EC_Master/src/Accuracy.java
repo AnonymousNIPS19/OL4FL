@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+// Utility
 class Accuracy {
     public static double acc;
     public double getAcc(){return acc;}
@@ -16,7 +17,6 @@ class Accuracy {
     public static ArrayList<ArrayList<Double>> alltestX=new ArrayList<>();
 
     public void loadData() throws IOException {
-        //读入原始数据
         BufferedReader br = new BufferedReader(new InputStreamReader
                 (new FileInputStream("mnist_digits_test.txt")));
         String data = null;

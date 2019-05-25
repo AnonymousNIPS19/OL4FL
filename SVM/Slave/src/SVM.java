@@ -5,9 +5,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 
-public class SVM
-
-{
+public class SVM {
 
     private int exampleNum;
 
@@ -15,7 +13,7 @@ public class SVM
 
     private double lambda=0.001;
 
-    private double eta = 0.001;//0.00001
+    private double eta = 0.001;
 
     private double threshold = 36000;
 
@@ -41,10 +39,8 @@ public class SVM
     }
 
 
-
-    private void CostAndGrad(ArrayList<ArrayList<Double>> X,ArrayList<Double> y,float[] w)
-
-    {
+    // Gradient descent implements SVM
+    private void CostAndGrad(ArrayList<ArrayList<Double>> X,ArrayList<Double> y,float[] w) {
 
         cost =0;
 
@@ -164,7 +160,6 @@ public class SVM
     public List<ArrayList<Double>> loadData(String filepath) throws IOException
 
     {
-        //读入原始数据
         BufferedReader br=new BufferedReader(new InputStreamReader
                 (new FileInputStream(filepath)));
         List<ArrayList<Double>> dataList = new ArrayList<>();

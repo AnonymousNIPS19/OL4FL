@@ -16,7 +16,6 @@ class Accuracy {
     public static ArrayList<ArrayList<Double>> alltestX=new ArrayList<>();
 
     public void loadData(String filepath) throws IOException {
-        //读入原始数据
         BufferedReader br = new BufferedReader(new InputStreamReader
                 (new FileInputStream(filepath)));
         String data = null;
@@ -69,7 +68,7 @@ class Accuracy {
 
         }
 
-        if(pre >=0)//这个阈值一般位于-1到1
+        if(pre >=0)
 
             return 1;
 
@@ -108,7 +107,7 @@ class Accuracy {
 
         System.out.println("total:"+testX.size());
 
-        System.out.println("error:"+right);
+        System.out.println("right:"+right);
 
         acc=(double)right/testX.size();
 

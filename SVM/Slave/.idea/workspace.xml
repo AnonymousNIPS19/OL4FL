@@ -6,7 +6,32 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fc6da-d99a-4959-9871-2f090e7cd708" name="Default Changelist" comment="" />
+    <list default="true" id="af0fc6da-d99a-4959-9871-2f090e7cd708" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../KMeans/EC_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KMeans/EC_Master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KMeans/Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KMeans/Slave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/Accuracy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/Accuracy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/Bandit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/Bandit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/FixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SVMMasterAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SVMMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SVMmasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SVMmasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/MServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/MServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/mabwithcost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/VariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/mnist_digits_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Accuracy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Accuracy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SVMSlave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SVMSlave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mnist_test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mnist_train012.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mnist_train1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mnist_train45.txt" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,14 +194,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1575883622">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="44" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="44" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SVMSlave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-731">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="379">
+              <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -184,11 +237,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SVM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="220" selection-start-line="220" selection-end-line="220" />
+            <state relative-caret-position="555">
+              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/mclient/MClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -196,20 +285,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Accuracy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-492">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KMeans.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="53" column="41" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -240,6 +317,9 @@
       <find>state</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -267,6 +347,7 @@
         <option value="$PROJECT_DIR$/src/SVMSlave.java" />
         <option value="$PROJECT_DIR$/src/Accuracy.java" />
         <option value="$PROJECT_DIR$/src/SVM.java" />
+        <option value="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" />
       </list>
     </option>
   </component>
@@ -282,18 +363,19 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="423" />
-    <option name="y" value="27" />
-    <option name="width" value="986" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="880" />
+    <option name="y" value="97" />
+    <option name="width" value="976" />
+    <option name="height" value="675" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -301,11 +383,36 @@
               <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
               <item name="Slave" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="mclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,8 +422,8 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="slave01" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558628272453" />
-    <property name="last_opened_file_path" value="$USER_HOME$/KMeans/Slave" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558772215152" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EC_Master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -509,17 +616,18 @@
       <workItem from="1558622465127" duration="4693000" />
       <workItem from="1558682418669" duration="866000" />
       <workItem from="1558687956219" duration="132000" />
+      <workItem from="1558766731482" duration="2341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221666000" />
+    <option name="totallyTimeSpent" value="224007000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="423" y="27" width="986" height="900" extended-state="4" />
+    <frame x="880" y="97" width="976" height="675" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20974576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21413276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -639,22 +747,6 @@
     <entry file="file://$PROJECT_DIR$/src/middle.java" />
     <entry file="file://$PROJECT_DIR$/src/KMeansSlaveDBI.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaStoM.java" />
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/mclient/MClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/mclient/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaMtoS.java" />
     <entry file="file://$PROJECT_DIR$/src/DBI.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -666,16 +758,9 @@
     <entry file="file://$PROJECT_DIR$/src/mnist_test1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="694">
           <caret line="53" column="41" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -685,8 +770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SVMSlave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="379">
+          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -695,15 +780,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Accuracy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        <state relative-caret-position="165">
+          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/mclient/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SVM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        <state relative-caret-position="555">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/mclient/MClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
         </state>
       </provider>
     </entry>

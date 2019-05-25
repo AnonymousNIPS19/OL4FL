@@ -5,6 +5,7 @@ import java.util.Random;
 
 class Bandit {
 
+    // Number of arms
     int K = 6;
     int probas[] = {15,13,10,7,5,3};
 
