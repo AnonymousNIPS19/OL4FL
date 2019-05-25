@@ -8,22 +8,16 @@
   <component name="ChangeListManager">
     <list default="true" id="af0fc6da-d99a-4959-9871-2f090e7cd708" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/F1measure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/F1measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/F1score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncDBI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncKUBE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterKUBE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMastercost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/MServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/MServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/ServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansSlave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeansSlave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SSE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/utils/Para.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/utils/Para.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/Bandit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/Bandit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/F1score.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/F1score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/FixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/mabwithcost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/VariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -366,7 +360,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="slave01" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558628272343" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558766900984" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -558,12 +552,12 @@
       <workItem from="1558598037011" duration="12575000" />
       <workItem from="1558682410215" duration="1187000" />
       <workItem from="1558688012114" duration="75000" />
-      <workItem from="1558753512745" duration="2403000" />
+      <workItem from="1558753512745" duration="2493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221278000" />
+    <option name="totallyTimeSpent" value="221368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1849" height="902" extended-state="6" />

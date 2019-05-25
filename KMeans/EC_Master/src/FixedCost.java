@@ -1,11 +1,11 @@
-import utils.MultinomialDistribution;
+import communication.utils.MultinomialDistribution;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class KUBE extends Bandit {
+public class FixedCost extends Bandit {
 
     List<Integer> actions = new ArrayList<>();
     int t = 0;
@@ -15,21 +15,21 @@ public class KUBE extends Bandit {
     double regret = 0;
     List<Double> regrets = new ArrayList<>();
 
-    // “同步 同质”实验
-    // 本地迭代一次与全局聚合一次所需的资源数（定值，三个边缘节点同质）
+    // Synchronous homogeneity experiment
+    // Number of resources required for a local iteration and a global aggregation (constant, three edge nodes homogeneous)
     public int[] localupdate = {5, 5, 5};
     public int[] globalaggre = {25, 25, 25};
 //    ////////////
 //    private double[] cost1 = {0.098, 0.125, 0.185, 0.278, 0.833, 1.667};
 //    private double[] cost2 = {10.2, 8.0, 5.4, 3.55, 1.2, 0.6};
-//    // 每一次拉臂所需的资源数
+//    // Number of resources required per pull
 //    public int[] CPU1 = {255, 200, 135, 90, 30, 15};
 //    public int[] IO1 = {25, 25, 25, 25, 25, 25};
 //    public int[] CPU2 = {255, 200, 135, 90, 30, 15};
 //    public int[] IO2 = {25, 25, 25, 25, 25, 25};
 //    public int[] CPU3 = {255, 200, 135, 90, 30, 15};
 //    public int[] IO3 = {25, 25, 25, 25, 25, 25};
-//    // 三个边缘节点各自的资源约束
+//    // Resource constraints for each of the three edge nodes
 //    public int allCPU1 = 1000;
 //    public int allIO1 = 300;
 //    public int allCPU2 = 1000;
@@ -77,29 +77,11 @@ public class KUBE extends Bandit {
             System.out.println("Regrets: " + regrets);
             //update_regret(i);
 
-//            try {
-//                // 准备文件666.txt其中的内容是空的
-//                File f1 = new File("C:\\Users\\HanQing\\IdeaProjects\\EC_Master\\src\\666.txt");
-//                if (f1.exists()==false){
-//                    f1.getParentFile().mkdirs();
-//                }
-//                // 准备长度是2的字节数组，用88,89初始化，其对应的字符分别是X,Y
-//                //byte data[] = {88,89};
-//                // 创建基于文件的输出流
-//                FileOutputStream fos = new FileOutputStream(f1);
-//                // 把数据写入到输出流
-//                fos.write();
-//                // 关闭输出流
-//                fos.close();
-//                System.out.println("输入完成");
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-
         }
         return i;
     }
 
+    // Based on an unbounded knapsack problem
     int run_one_step(){
 
         t = t + 1;
@@ -108,11 +90,13 @@ public class KUBE extends Bandit {
             double log = 2 * Math.log(t);
             double count = Math.sqrt(log / (1 + counts[i]));
             //x[i] = estimates[i] + count;
-            x[i] = count - estimates[i];
+            x[i] = count + estimates[i];
         }
         System.out.println("x[i]: " + Arrays.toString(x));
         System.out.println("cost[i]: " + Arrays.toString(cost));
         HashMap<Double, Integer> densityIndexMap = new HashMap<>();
+
+        // Apply the density-ordered greedy approximation method
         for( int i = 0; i < K; i++ ){
 
             density[i] = x[i]/cost[i];
@@ -154,6 +138,8 @@ public class KUBE extends Bandit {
         for(int i = 0; i < K; i++){
             prob[i] = 1.0*m[i]/sum_m;
         }
+
+        // Choose an arm randomly with the probability distribution
         int arm = MultinomialDistribution.sampleFromMultinomialDistribution(prob);
         oldArm = arm;
         System.out.println("arm: " + arm);
@@ -176,7 +162,9 @@ public class KUBE extends Bandit {
         System.out.println("Regret: " + regret);
         System.out.println("r: " + r);
         //double y = (r - estimates[i]) / (counts[i] + 1);
-        estimates[oldArm] = (r + estimates[oldArm] * counts[oldArm]) / (counts[oldArm] + 1);
+
+        // Utility : estimates
+        estimates[oldArm] = (r - estimates[oldArm] * counts[oldArm]) / (counts[oldArm] + 1);
 
         System.out.println("Estimates: " + Arrays.toString(estimates));
         System.out.println("r: " + r);

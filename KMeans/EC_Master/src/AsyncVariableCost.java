@@ -2,18 +2,23 @@ import communication.mserver.MParaChannel;
 import communication.mserver.MServer;
 import communication.utils.Para;
 import io.netty.channel.Channel;
-
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class KMeansMasterAsyncKUBE {
+//import utils.WriteToFile;
+
+public class AsyncVariableCost {
 
     public static void main(String[] args) throws IOException {
 
         KMeans readDataKMeans = new KMeans();
         readDataKMeans.readData();
+
+        // Cluster number
         int k =6;
+
+        // Batch size
         int miniBatchNum =500;
 
         MServer server = new MServer(8803);
@@ -27,30 +32,29 @@ public class KMeansMasterAsyncKUBE {
 
         List<ArrayList<Double>> globalcenter = new ArrayList<>();
         HashMap<Integer, Integer> armMap = new HashMap<>();
-        armMap.put(0, 51);
+        armMap.put(0, 50);
         armMap.put(1, 40);
-        armMap.put(2, 27);
-        armMap.put(3, 18);
-        armMap.put(4, 6);
-        armMap.put(5, 3);
-        HashMap<String, KUBE> mapKUBE = new HashMap<>();
-        KUBE kube1 = new KUBE();
-        kube1.allCPU = 1000;
-        kube1.allIO = 50;
-        mapKUBE.put("slave1", kube1);
-        KUBE kube2 = new KUBE();
-        kube2.allCPU = 1000;
-        kube2.allIO = 150;
-        mapKUBE.put("slave2", kube2);
-        KUBE kube3 = new KUBE();
-        kube3.allCPU = 1000;
-        kube3.allIO = 200;
-        mapKUBE.put("slave3", kube3);
+        armMap.put(2, 30);
+        armMap.put(3, 20);
+        armMap.put(4, 10);
+        armMap.put(5, 1);
+
+        HashMap<String, VariableCost> mapmabwithcost = new HashMap<>();
+        VariableCost mab1 = new VariableCost();
+        mab1.resource =10000;
+        mapmabwithcost.put("slave1", mab1);
+        VariableCost mab2 = new VariableCost();
+        mab2.resource = 10000;
+        mapmabwithcost.put("slave2", mab2);
+        VariableCost mab3 = new VariableCost();
+        mab3.resource = 10000;
+        mapmabwithcost.put("slave3", mab3);
 
         HashMap<String, Boolean> mapIsFirst = new HashMap<>();
         mapIsFirst.put("slave1", true);
         mapIsFirst.put("slave2", true);
         mapIsFirst.put("slave3", true);
+
 
         HashMap<String, ArrayList<Double>> mapDBI = new HashMap<>();
         ArrayList<Double> mapDBI1=new ArrayList<Double>();
@@ -65,6 +69,7 @@ public class KMeansMasterAsyncKUBE {
         mapNum.put("slave2",mapNum2);
         mapNum.put("slave3",mapNum3);
 
+
         KMeans kmeans = new KMeans();
 
         List<ArrayList<Double>> oldCenterList = new ArrayList<ArrayList<Double>>();
@@ -74,20 +79,35 @@ public class KMeansMasterAsyncKUBE {
         double[] distance = new double[k];
         int[] oldNum = null;
 
-        double slavedbi; //slave传来的局部DBI
-        long sendtime; //slave传来的上传时间
-        long uploadtime; //上传用时，IO时间
-        long runtime; //局部迭代时间，CPU时间
 
-        //异步情况下
+        double slavedbi;
+        // Upload time from slave
+        long sendtime;
+        // Upload time, IO time
+        long uploadtime=0;
+        // Local iteration time, CPU time
+        long runtime=0;
+
+        ArrayList<Integer> IO=new ArrayList<Integer>();
+        int sumio=0;
+        ArrayList<Integer> sumIO=new ArrayList<Integer>();
+        ArrayList<Integer> CPU=new ArrayList<Integer>();
+        int sumcpu=0;
+        ArrayList<Integer> sumCPU=new ArrayList<Integer>();
+        int asyncsum=0;
+        ArrayList<Integer> sumlist=new ArrayList<Integer>();
+        int sumtime=0;
+        ArrayList<Integer> sumTime=new ArrayList<Integer>();
+
+
         boolean isFirst = true;
         int aN = 1888;
         int ai = 0;
         int clientNum = 3;
         int num_stop = 0;
 
+        // Connect 3 slaves, and then initialize global parameter
         Para aparaMtoS = new Para();
-
         while (clientNum != MServer.paraQueue.size()) {
             try {
                 TimeUnit.MILLISECONDS.sleep(50);
@@ -95,7 +115,6 @@ public class KMeansMasterAsyncKUBE {
                 e.printStackTrace();
             }
         }
-
 
         List<MParaChannel> paraList = new ArrayList<>();
         for (int j = 0; j < clientNum; j++) {
@@ -116,12 +135,13 @@ public class KMeansMasterAsyncKUBE {
         paraMtoS.centerList = globalcenter;
         MServer.serverHandler.broadcast(paraMtoS);
 
+
         while( ai < aN || num_stop < 3) {
             ai++;
-
             MParaChannel paraChannel = null;
             try {
-                paraChannel = MServer.paraQueue.take();//阻塞直到有值
+                // Block until there is a value
+                paraChannel = MServer.paraQueue.take();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -129,23 +149,33 @@ public class KMeansMasterAsyncKUBE {
             Para paraStoM = paraChannel.paraStoM;
             Channel socketChannel = paraChannel.socketChannel;
 
+
+            long receivetime = System.currentTimeMillis();
+            // Global parameter update
             if( isFirst ){
                 isFirst = false;
                 globalcenter = paraStoM.centerList;
                 oldNum = paraStoM.num;
+                runtime=paraStoM.runtime;
+                sendtime=paraStoM.sendtime;
+                uploadtime=(receivetime-sendtime);
             }else{
                 kmeans.kmeans(paraStoM.centerList, oldCenterList, paraStoM.num, oldNum, k);
-
-                globalcenter = kmeans.getCenter();//获得全局簇中心
+                globalcenter = kmeans.getCenter();
                 oldNum = kmeans.arrNum;
+                runtime=paraStoM.runtime;
                 slavedbi=paraStoM.DBI;
+                sendtime=paraStoM.sendtime;
+                uploadtime = receivetime - sendtime;
             }
 
-            //计算两次全局簇中心之间的距离
+            int io= (int) uploadtime;
+            int cpu = (int) (runtime);
+
             if(!oldCenterList.isEmpty()) {
                 for (int i = 0; i < k; i++) {
                     distance[i]=0;
-                    for (int j = 0; j < globalcenter.get(0).size(); j++) {//计算两点之间的欧式距离
+                    for (int j = 0; j < globalcenter.get(0).size(); j++) {
                         distance[i] += (globalcenter.get(i).get(j) - oldCenterList.get(i).get(j)) * (globalcenter.get(i).get(j) - oldCenterList.get(i).get(j));
                     }
                     distance[i]=Math.sqrt(distance[i]);
@@ -158,24 +188,27 @@ public class KMeansMasterAsyncKUBE {
             for(int i = 0; i < globalcenter.size(); i++){
                 oldCenterList.add( (ArrayList<Double>)globalcenter.get(i).clone());
             }
-            //计算评价指标DBI, 不能删
-            ///kkk
+
+            // Get DBI
             KMeans kmean=new KMeans(k, globalcenter,miniBatchNum);
             List<ArrayList<Double>> test_center =kmean.getNewCenter();
             DBI test=new DBI(test_center, kmean.getHelpCenterList());
             DBI.add(test.dbi);
+            // Get F1-score
             F1score f1Score =new F1score(kmean.train_target,kmean.predict_target);
             f1.add(f1Score.f1);
+
 
             if( mapIsFirst.get(paraStoM.slaveName) ){
                 mapIsFirst.put(paraStoM.slaveName, false);
             }else {
-                mapKUBE.get(paraStoM.slaveName).updateEstimate();
+                mapmabwithcost.get(paraStoM.slaveName).updateEstimate();
             }
+            System.out.println("paraStoM.slaveName:"+paraStoM.slaveName);
 
-            //根据DBI的值来修改MAB每条臂的分布，从而选出下一次迭代的臂i
+
             int arm = -1;
-            KUBE kube = mapKUBE.get(paraStoM.slaveName);
+            VariableCost mab = mapmabwithcost.get(paraStoM.slaveName);
 
             ArrayList<Double> mapdbi=mapDBI.get(paraStoM.slaveName);
             int num=mapNum.get(paraStoM.slaveName);
@@ -189,6 +222,7 @@ public class KMeansMasterAsyncKUBE {
                 else num=0;
             }
 
+
             if(num==5){
                 aparaMtoS.time = 0;
                 aparaMtoS.centerList = globalcenter;
@@ -196,19 +230,39 @@ public class KMeansMasterAsyncKUBE {
                 mapNum.put(paraStoM.slaveName, 0);
             }
             else {
-                if (kube.isResourceEnough()) {
-                    arm = kube.mab(1);
+                if (mab.isResourceEnough()) {
+                    mab.newio = io;
+                    mab.newcpu = cpu;
+
+                    //time
+                    IO.add(mab.newio);
+                    sumio = sumio + mab.newio;
+                    sumIO.add(sumio);
+
+                    CPU.add(mab.newcpu);
+                    sumcpu = sumcpu + mab.newcpu;
+                    sumCPU.add(sumcpu);
+                    asyncsum = mab.newcpu + mab.newio;
+                    sumlist.add(asyncsum);
+                    sumtime = sumtime + asyncsum;
+                    sumTime.add(sumtime);
+
+                    arm = mab.mab(1);
                     int t = armMap.get(arm);
                     aparaMtoS.time = t;
                     aparaMtoS.centerList = globalcenter;
                     MServer.serverHandler.sendOneChannel(socketChannel, aparaMtoS);
                 } else {
                     num_stop++;
+                    System.out.println("num_stop" + num_stop);
                     Para endParaMtoS = new Para();
                     endParaMtoS.state = -1;
                     MServer.serverHandler.sendOneChannel(socketChannel, endParaMtoS);
+
                 }
             }
+
+            if(num_stop==clientNum) break;
 
         }
         System.out.println("ready to stop!!!");
@@ -217,17 +271,18 @@ public class KMeansMasterAsyncKUBE {
         MServer.serverHandler.broadcast(endParaMtoS);
         MServer.closeGracefully();
 
+
         System.out.println("END");
         if( aN ==  ai){
-            System.out.println("正常退出");
+            System.out.println("Normal Exit !");
         }else{
-            System.out.println("异常退出：预计" + aN + "次，但只执行了" + ai + "次");
+            System.out.println("Abnormal Exit：expect" + aN + "times，but only executed" + ai + "times.");
         }
 
         HashMap<String, List<Double>> mapRegret = new HashMap<>();
-        Iterator<Map.Entry<String, KUBE>> entries = mapKUBE.entrySet().iterator();
+        Iterator<Map.Entry<String, VariableCost>> entries = mapmabwithcost.entrySet().iterator();
         while (entries.hasNext()) {
-            Map.Entry<String, KUBE> entry = entries.next();
+            Map.Entry<String, VariableCost> entry = entries.next();
             mapRegret.put(entry.getKey(), entry.getValue().regrets);
         }
 

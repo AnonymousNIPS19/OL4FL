@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class mabwithcost extends Bandit {
+public class VariableCost extends Bandit {
     List<Integer> actions=new ArrayList<Integer>();
     int t=0;
     double estimates[]={1,1,1,1,1,1};
@@ -17,18 +17,20 @@ public class mabwithcost extends Bandit {
 
     double avgcost[]=new double[K];
 
-    public int allCPU =10000;
+    // Resource budget
+    public int resource =10000;
     public int newcpu;
     public int newio;
     double mincost=0;
     double minio=0;
     double mincpu=0;
+
+    // Density: utility / resource
     public double[] density = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 
-
     public boolean isResourceEnough(){
-        if( allCPU> (minio+mincpu)){
+        if( resource> (minio+mincpu)){
             return true;
         }
         return false;
@@ -49,26 +51,9 @@ public class mabwithcost extends Bandit {
             System.out.println("Regrets: " + regrets);
             //update_regret(i);
 
-//            try {
-//                // 准备文件666.txt其中的内容是空的
-//                File f1 = new File("C:\\Users\\HanQing\\IdeaProjects\\EC_Master\\src\\666.txt");
-//                if (f1.exists()==false){
-//                    f1.getParentFile().mkdirs();
-//                }
-//                // 准备长度是2的字节数组，用88,89初始化，其对应的字符分别是X,Y
-//                //byte data[] = {88,89};
-//                // 创建基于文件的输出流
-//                FileOutputStream fos = new FileOutputStream(f1);
-//                // 把数据写入到输出流
-//                fos.write();
-//                // 关闭输出流
-//                fos.close();
-//                System.out.println("输入完成");
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-
         }
+
+        // Select an arm
         return i;
     }
 
@@ -83,9 +68,9 @@ public class mabwithcost extends Bandit {
         cpu[oldArm]=(double)newcpu;
         cost[oldArm] = cost[oldArm] + io[oldArm]/cpu[oldArm];
         System.out.println("cost[oldArm]:" +cost[oldArm]);
-        allCPU=allCPU-newcpu-newio;
+        resource=resource-newcpu-newio;
 //        allIO=allIO-newio;
-        System.out.println("allCPU:" + allCPU);
+        System.out.println("allCPU:" + resource);
 //        System.out.println("allIO:" + allIO);
 
         if(t<K){
@@ -94,8 +79,10 @@ public class mabwithcost extends Bandit {
 
         }
         else {
-            double x[] = new double[K];
 
+            // A time-varying value for each arm
+            // x = density + ( ( 1 + 1 / mincost ) * count ) / ( mincost - count )
+            double x[] = new double[K];
             minio=Arrays.stream(io).min().getAsDouble();
             mincpu=Arrays.stream(cpu).min().getAsDouble();
             System.out.println("minio:" + minio);
@@ -110,7 +97,7 @@ public class mabwithcost extends Bandit {
                 double count = Math.sqrt(log / (1 + counts[j]));
                 double count1=(1 + 1 / mincost) * count;
 //                x[j] =  (count1 / (mincost - count))-density[j] ;
-                x[j] = -density[j] + (1/mincost)*(1+1/(mincost-count))*count;
+                x[j] = density[j] + (1+1/mincost)*count/(mincost-count);
             }
             System.out.println("cost:" + Arrays.toString(cost));
             System.out.println("avgcost:" + Arrays.toString(avgcost));
@@ -127,8 +114,6 @@ public class mabwithcost extends Bandit {
         oldArm = i;
 
         System.out.println("i:"+i);
-
-
         return i;
     }
 
@@ -138,7 +123,9 @@ public class mabwithcost extends Bandit {
         System.out.println("Regret: " + regret);
         System.out.println("r: " + r);
         //double y = (r - estimates[i]) / (counts[i] + 1);
-        estimates[oldArm] = (r + estimates[oldArm] * counts[oldArm]) / (counts[oldArm] + 1);
+
+        // Utility : estimates
+        estimates[oldArm] = (r - estimates[oldArm] * counts[oldArm]) / (counts[oldArm] + 1);
 
         System.out.println("Estimates: " + Arrays.toString(estimates));
         System.out.println("r: " + r);

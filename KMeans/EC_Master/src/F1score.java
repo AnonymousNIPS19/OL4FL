@@ -1,8 +1,9 @@
 import java.io.FileNotFoundException;
 import java.util.*;
 
+// Utility
 class F1score {
-    double f1;
+    public static double f1;
     double getf1(){return f1;}
 
     double[] LineMax(double data[][], int line, int column){

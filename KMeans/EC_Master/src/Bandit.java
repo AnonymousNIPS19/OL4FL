@@ -5,6 +5,7 @@ import java.util.Random;
 
 class Bandit {
 
+    // Number of arms
     int K = 6;
     int probas[] = {15,13,10,7,5,3};
 
@@ -27,7 +28,7 @@ class Bandit {
 //        else if (i == 0){
 //            precision = rd.nextInt(4)+3;
 //        }
-        precision = DBI.dbi;
+        precision = F1score.f1;
         System.out.println("Precision: " + precision);
         //if(precision<probas[i])
         if(precision < 1.5)
@@ -38,7 +39,7 @@ class Bandit {
     double ucb_generate_reward(int i){
         //Random rd = new Random();
         double precision = 0.0;
-        precision = DBI.dbi;
+        precision = F1score.f1;
         System.out.println("Precision: " + precision);
         return precision;
     }

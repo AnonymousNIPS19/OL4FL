@@ -7,22 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c22d963-40e9-470c-9ef7-63aede89fcfa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/F1measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/F1score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeansMasterKUBE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeansMastercost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/mserver/MServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/mserver/MServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/mserver/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/mserver/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bandit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bandit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/F1score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/F1score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mabwithcost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VariableCost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/DBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/src/DBI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/src/KMeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/KMeansSlave.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/src/KMeansSlave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/SSE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/src/SSE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/communication/mclient/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/src/communication/mclient/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/src/communication/utils/Para.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/src/communication/utils/Para.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -189,24 +184,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="7" />
-          <entry key="java" value="62" />
+          <entry key="dummy" value="81" />
+          <entry key="java" value="825" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="62" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="825" />
+          <entry key="PLAIN_TEXT" value="81" />
         </counts>
       </usages-collector>
     </session>
@@ -216,11 +211,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AsyncVariableCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="180" column="34" lean-forward="true" selection-start-line="180" selection-start-column="12" selection-end-line="183" selection-end-column="13" />
+            <state relative-caret-position="634">
+              <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,10 +224,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KMeansMastercost.java">
+        <entry file="file://$PROJECT_DIR$/src/VariableCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="514">
+              <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FixedCost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,53 +247,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/F1score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="120" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="-1181">
+              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/mserver/MParaChannel.java">
+        <entry file="file://$PROJECT_DIR$/src/SyncFixedCost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-956">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SyncVariableCost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1050">
+              <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DBI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/communication/mserver/MServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <caret line="64" column="17" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+        <entry file="file://$PROJECT_DIR$/src/AsyncFixedCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KMeans.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
+            <state relative-caret-position="495">
+              <caret line="234" column="9" lean-forward="true" selection-start-line="230" selection-start-column="8" selection-end-line="234" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -352,15 +356,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/190325/kddasync(3,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddasync(2,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddsync(0,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddsync(1,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddsync(3,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddsync(9,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddasync(6,2000).txt" />
-        <option value="$PROJECT_DIR$/src/190325/kddasync(7,2000).txt" />
-        <option value="$PROJECT_DIR$/src/KMeanswithCost1.java" />
         <option value="$PROJECT_DIR$/src/190327/s1sync(0,300).txt" />
         <option value="$PROJECT_DIR$/src/190327/s1async(0,300).txt" />
         <option value="$PROJECT_DIR$/src/190327/s1async(1,300).txt" />
@@ -400,9 +395,18 @@
         <option value="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" />
         <option value="$PROJECT_DIR$/src/KMeansMastercost.java" />
         <option value="$PROJECT_DIR$/src/KMeans.java" />
-        <option value="$PROJECT_DIR$/src/F1score.java" />
         <option value="$PROJECT_DIR$/src/communication/mserver/MServer.java" />
         <option value="$PROJECT_DIR$/src/communication/mserver/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/KUBE.java" />
+        <option value="$PROJECT_DIR$/src/communication/utils/MultinomialDistribution.java" />
+        <option value="$PROJECT_DIR$/src/SyncFixedCost.java" />
+        <option value="$PROJECT_DIR$/src/SyncVariableCost.java" />
+        <option value="$PROJECT_DIR$/src/AsyncFixedCost.java" />
+        <option value="$PROJECT_DIR$/src/AsyncVariableCost.java" />
+        <option value="$PROJECT_DIR$/src/F1score.java" />
+        <option value="$PROJECT_DIR$/src/Bandit.java" />
+        <option value="$PROJECT_DIR$/src/VariableCost.java" />
+        <option value="$PROJECT_DIR$/src/FixedCost.java" />
       </list>
     </option>
   </component>
@@ -493,8 +497,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558754621057" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Slave" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558770367308" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SVM/Slave" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -502,19 +506,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HanQing\IdeaProjects\EC_Master\src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/communication/utils" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/communication/mserver" />
+      <recent name="$PROJECT_DIR$/src/communication" />
+      <recent name="$PROJECT_DIR$/src/docker" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="communication.utils" />
       <recent name="" />
       <recent name="utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/communication/mserver" />
-      <recent name="$PROJECT_DIR$/src/communication" />
-      <recent name="$PROJECT_DIR$/src/docker" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\HanQing\IdeaProjects\EC_Master\src" />
     </key>
   </component>
@@ -530,9 +534,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KMeansMasterAsyncDBI">
-    <configuration name="KMeansMasterAsyncDBI" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KMeansMasterAsyncDBI" />
+  <component name="RunManager" selected="Application.AsyncVariableCost">
+    <configuration name="AsyncVariableCost" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AsyncVariableCost" />
       <module name="EC_Master" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -552,13 +556,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KMeansMastercost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KMeansMastercost" />
-      <module name="EC_Master" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KMeansMster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KMeansMster" />
       <module name="EC_Master" />
@@ -566,16 +563,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SyncVariableCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SyncVariableCost" />
+      <module name="EC_Master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.KMeansMasterAsyncDBI" />
-      <item itemvalue="Application.KMeansMastercost" />
+      <item itemvalue="Application.AsyncVariableCost" />
+      <item itemvalue="Application.SyncVariableCost" />
       <item itemvalue="Application.KMeansMasterAsynccost" />
       <item itemvalue="Application.KMeansMasterAsyncRandom" />
       <item itemvalue="Application.KMeansMster" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KMeansMastercost" />
+        <item itemvalue="Application.SyncVariableCost" />
         <item itemvalue="Application.KMeansMasterAsynccost" />
         <item itemvalue="Application.KMeansMster" />
         <item itemvalue="Application.KMeansMasterAsyncRandom" />
@@ -685,12 +689,12 @@
       <workItem from="1558603170453" duration="12008000" />
       <workItem from="1558620138949" duration="598000" />
       <workItem from="1558682417823" duration="3972000" />
-      <workItem from="1558753493514" duration="1790000" />
+      <workItem from="1558753493514" duration="6416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="601893000" />
+    <option name="totallyTimeSpent" value="606519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,7 +709,7 @@
     <frame x="67" y="25" width="1849" height="902" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712092" visible="true" weight="0.12672938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712092" visible="true" weight="0.19037078" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -747,9 +751,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,0).txt" />
-    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,2).txt" />
-    <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,3).txt" />
     <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,4).txt" />
     <entry file="file://$PROJECT_DIR$/src/case2/kdd(1000,5).txt" />
     <entry file="file://$PROJECT_DIR$/src/case3/kdd(1000,5).txt" />
@@ -768,13 +769,6 @@
     <entry file="file://$PROJECT_DIR$/src/190319/kdd1(0,8000).txt" />
     <entry file="file://$PROJECT_DIR$/src/communication/client/Client.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/server/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/KUBE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/190319/kdd1(2,2000).txt" />
     <entry file="file://$PROJECT_DIR$/src/190319/kdd2(1,8000).txt" />
     <entry file="file://$PROJECT_DIR$/src/190326/kddasync(2,2000).txt" />
@@ -783,13 +777,6 @@
     <entry file="file://$PROJECT_DIR$/src/190326/kddasync(0,2000).txt" />
     <entry file="file://$PROJECT_DIR$/src/190327/s1async(5,300).txt" />
     <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsynccost.java" />
-    <entry file="file://$PROJECT_DIR$/src/mabwithcost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaMtoS.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/utils/SerializeUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaStoM.java" />
@@ -799,64 +786,6 @@
     <entry file="file://$PROJECT_DIR$/src/KMeansMster.java" />
     <entry file="file://$PROJECT_DIR$/src/KMeanswithCost1.java" />
     <entry file="file://$PROJECT_DIR$/src/regretsAsync.txt" />
-    <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KMeansMasterKUBE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="180" column="34" lean-forward="true" selection-start-line="180" selection-start-column="12" selection-end-line="183" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KMeans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/KMeansMastercost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/F1score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/mserver/MParaChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -868,13 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -892,10 +814,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/MultinomialDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KMeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="56" lean-forward="true" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AsyncFixedCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="234" column="9" lean-forward="true" selection-start-line="230" selection-start-column="8" selection-end-line="234" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/mserver/MServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="-581">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bandit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VariableCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FixedCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/F1score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1181">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SyncFixedCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-956">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SyncVariableCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AsyncVariableCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
