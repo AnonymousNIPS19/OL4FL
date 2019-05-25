@@ -136,7 +136,7 @@ public class AsyncFixedCost {
             Para paraStoM = paraChannel.paraStoM;
             Channel socketChannel = paraChannel.socketChannel;
 
-            // Global parameter update
+            // Receive local parameter and update global parameter
             if( isFirst ){
                 isFirst = false;
                 globalcenter = paraStoM.centerList;
@@ -198,6 +198,7 @@ public class AsyncFixedCost {
                 else num=0;
             }
 
+            // Master send parameter to slave
             // NULL ARM
             if(num==5){
                 aparaMtoS.time = 0;

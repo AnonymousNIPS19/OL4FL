@@ -42,7 +42,6 @@ public class SyncFixedCost {
         armMap.put(5, 3);
         FixedCost fixedCost = new FixedCost();
 
-        //同步情况下
         boolean isFirst = true;
         int recycleCount = 0;
         int clientNum = 3;
@@ -56,6 +55,7 @@ public class SyncFixedCost {
         long[] uploadtime=new long[clientNum];
         long[] runtime=new long[clientNum];
 
+        // Connect 3 slaves, and then initialize global parameter
         while (clientNum != MServer.paraQueue.size()) {
             try {
                 TimeUnit.MILLISECONDS.sleep(50);
@@ -100,7 +100,7 @@ public class SyncFixedCost {
 
             long receiveTime = System.currentTimeMillis();
 
-            // Global parameter update
+            // Receive local parameter and update global parameter
             KMeans kmeans = new KMeans(
                     paraList.get(0).paraStoM.centerList, paraList.get(1).paraStoM.centerList, paraList.get(2).paraStoM.centerList,
                     paraList.get(0).paraStoM.num, paraList.get(1).paraStoM.num, paraList.get(2).paraStoM.num, k);
@@ -156,6 +156,7 @@ public class SyncFixedCost {
 
             int t = armMap.get(arm);
 
+            // Master send parameter to slave
             paraMtoS.time = t;
             paraMtoS.centerList = globalcenter;
             MServer.serverHandler.broadcast(paraMtoS);

@@ -7,17 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c22d963-40e9-470c-9ef7-63aede89fcfa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bandit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bandit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/F1score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/F1score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsyncVariableCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsyncFixedCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyncFixedCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyncVariableCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FixedCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mabwithcost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VariableCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Slave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsyncFixedCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AsyncVariableCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AsyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SyncFixedCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SyncVariableCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kdd_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Slave/src/kdd1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Slave/src/kdd12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Slave/src/kdd1234.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Slave/src/kdd1_test.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/DBI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/KMeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/SSE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/src/SVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/SVMSlave.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/src/SVMSlave.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -195,12 +200,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="81" />
-          <entry key="java" value="825" />
+          <entry key="java" value="863" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="825" />
+          <entry key="JAVA" value="863" />
           <entry key="PLAIN_TEXT" value="81" />
         </counts>
       </usages-collector>
@@ -214,8 +219,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AsyncVariableCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+            <state relative-caret-position="1459">
+              <caret line="154" column="66" selection-start-line="154" selection-start-column="66" selection-end-line="154" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,8 +261,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SyncFixedCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-956">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="139">
+              <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -268,8 +273,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SyncVariableCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1050">
-              <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="41" />
+            <state relative-caret-position="394">
+              <caret line="217" column="12" lean-forward="true" selection-start-line="217" selection-start-column="12" selection-end-line="217" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -289,8 +294,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AsyncFixedCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="234" column="9" lean-forward="true" selection-start-line="230" selection-start-column="8" selection-end-line="234" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -399,14 +404,14 @@
         <option value="$PROJECT_DIR$/src/communication/mserver/ServerHandler.java" />
         <option value="$PROJECT_DIR$/src/KUBE.java" />
         <option value="$PROJECT_DIR$/src/communication/utils/MultinomialDistribution.java" />
-        <option value="$PROJECT_DIR$/src/SyncFixedCost.java" />
-        <option value="$PROJECT_DIR$/src/SyncVariableCost.java" />
-        <option value="$PROJECT_DIR$/src/AsyncFixedCost.java" />
-        <option value="$PROJECT_DIR$/src/AsyncVariableCost.java" />
         <option value="$PROJECT_DIR$/src/F1score.java" />
         <option value="$PROJECT_DIR$/src/Bandit.java" />
         <option value="$PROJECT_DIR$/src/VariableCost.java" />
         <option value="$PROJECT_DIR$/src/FixedCost.java" />
+        <option value="$PROJECT_DIR$/src/SyncFixedCost.java" />
+        <option value="$PROJECT_DIR$/src/SyncVariableCost.java" />
+        <option value="$PROJECT_DIR$/src/AsyncFixedCost.java" />
+        <option value="$PROJECT_DIR$/src/AsyncVariableCost.java" />
       </list>
     </option>
   </component>
@@ -497,7 +502,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558770367308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558770754683" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SVM/Slave" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -689,12 +694,12 @@
       <workItem from="1558603170453" duration="12008000" />
       <workItem from="1558620138949" duration="598000" />
       <workItem from="1558682417823" duration="3972000" />
-      <workItem from="1558753493514" duration="6416000" />
+      <workItem from="1558753493514" duration="7224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="606519000" />
+    <option name="totallyTimeSpent" value="607327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,7 +712,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1849" height="902" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49712092" visible="true" weight="0.19037078" />
       <window_info id="Image Layers" order="1" />
@@ -842,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AsyncFixedCost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="234" column="9" lean-forward="true" selection-start-line="230" selection-start-column="8" selection-end-line="234" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DBI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -880,6 +874,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/F1score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1181">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SyncFixedCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SyncVariableCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="217" column="12" lean-forward="true" selection-start-line="217" selection-start-column="12" selection-end-line="217" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FixedCost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -890,27 +911,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/F1score.java">
+    <entry file="file://$PROJECT_DIR$/src/AsyncFixedCost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1181">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SyncFixedCost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-956">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SyncVariableCost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1050">
-          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="41" />
+        <state relative-caret-position="180">
+          <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -919,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AsyncVariableCost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+        <state relative-caret-position="1459">
+          <caret line="154" column="66" selection-start-line="154" selection-start-column="66" selection-end-line="154" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

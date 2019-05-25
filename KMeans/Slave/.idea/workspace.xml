@@ -7,17 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af0fc6da-d99a-4959-9871-2f090e7cd708" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/Bandit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/Bandit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/F1score.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/F1score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncVariableCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncFixedCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncFixedCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncVariableCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/FixedCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EC_Master/src/mabwithcost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/VariableCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/AsyncFixedCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/AsyncVariableCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/AsyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SyncFixedCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncFixedCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/SyncVariableCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/SyncVariableCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/kdd_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kdd1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kdd12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kdd1234.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kdd1_test.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/DBI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/KMeans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/SSE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/src/SVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SVM/Slave/src/SVMSlave.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SVM/Slave/src/SVMSlave.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -158,30 +163,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/KMeansSlave.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/communication/mclient/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -221,11 +214,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/KMeans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="1140">
               <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/KMeansSlave.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="111" column="38" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -301,11 +306,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="1166" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="820" />
+    <option name="y" value="209" />
+    <option name="width" value="996" />
+    <option name="height" value="675" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -332,20 +337,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="communication" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Slave" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="mclient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Slave" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="communication" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -360,7 +351,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="slave01" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558766900984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558770754751" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -552,18 +543,17 @@
       <workItem from="1558598037011" duration="12575000" />
       <workItem from="1558682410215" duration="1187000" />
       <workItem from="1558688012114" duration="75000" />
-      <workItem from="1558753512745" duration="2493000" />
+      <workItem from="1558753512745" duration="3076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221368000" />
+    <option name="totallyTimeSpent" value="221951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1849" height="902" extended-state="6" />
-    <editor active="true" />
+    <frame x="820" y="209" width="996" height="675" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110680684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2096436" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -736,20 +726,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KMeansSlave.java">
+    <entry file="file://$PROJECT_DIR$/src/KMeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KMeans.java">
+    <entry file="file://$PROJECT_DIR$/src/KMeansSlave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="29" />
+        <state relative-caret-position="273">
+          <caret line="111" column="38" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

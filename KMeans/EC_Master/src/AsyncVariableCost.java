@@ -151,7 +151,8 @@ public class AsyncVariableCost {
 
 
             long receivetime = System.currentTimeMillis();
-            // Global parameter update
+
+            // Receive local parameter and update global parameter
             if( isFirst ){
                 isFirst = false;
                 globalcenter = paraStoM.centerList;
@@ -223,6 +224,8 @@ public class AsyncVariableCost {
             }
 
 
+            // Master send parameter to slave
+            // NULL ARM
             if(num==5){
                 aparaMtoS.time = 0;
                 aparaMtoS.centerList = globalcenter;
