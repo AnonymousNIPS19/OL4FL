@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Para {
+
     //master to slave
     public int state = 1;
     public String msg = "master to slave!";

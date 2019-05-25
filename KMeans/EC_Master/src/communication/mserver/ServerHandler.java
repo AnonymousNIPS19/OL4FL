@@ -13,19 +13,14 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 public class ServerHandler extends SimpleChannelInboundHandler<Para> {
     public static final ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
-    //接收消息
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, Para para) throws Exception {
         System.out.println("receive from client: " + para.toString());
         MServer.paraQueue.add( new MParaChannel(para, ctx.channel()));
         System.out.println("receive msg from slaveName: " + para.slaveName + "  queue size:" + MServer.paraQueue.size() );
-//        ctx.writeAndFlush("hello client!");
-//        ctx.write(user);
-//        user.setName("hello client");
-//        ctx.writeAndFlush(user);
     }
 
-    //处理新增加的通道
+    // Handle newly added channels
     @Override
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
         Channel channel = ctx.channel();
@@ -53,7 +48,7 @@ public class ServerHandler extends SimpleChannelInboundHandler<Para> {
     }
 
     /**
-     * 处理退出消息通道
+     *  Handle exit message channels
      * @param ctx
      * @throws Exception
      */

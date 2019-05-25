@@ -4,10 +4,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-//计算局部DBI
 class DBI{
-    public static double dbi = 0; //聚类后计算DBI时引用
-    public static double Dbi = 0; //main函数中引用
+    public static double dbi = 0;
+    public static double Dbi = 0;
     public static List<ArrayList<Double>> dataList = new ArrayList<>();
     public static List<ArrayList<Double>> allDataList;
 
@@ -18,9 +17,7 @@ class DBI{
         return helpCenterList;
     }
 
-    //读取数据
     public List<ArrayList<Double>> Data(String filepath) throws IOException {
-        //读入原始数据
         BufferedReader br = new BufferedReader(new InputStreamReader(
                 new FileInputStream(filepath)));
         String data = null;
@@ -43,7 +40,6 @@ class DBI{
     public void  readData(String filepath){
         try {
             allDataList = Data(filepath);
-//            dataList = Data();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -57,7 +53,6 @@ class DBI{
 
         Random rand = new Random();
         dataList.clear();
-//        ArrayList<Integer> index=new ArrayList<>();
         while(true){
             int k = rand.nextInt(allDataList.size());
             set.add(k);
@@ -68,12 +63,10 @@ class DBI{
         for(int i : set){
             dataList.add(new ArrayList<>(allDataList.get(i)));
         }
-
-
         return miniBatchNum;
     }
 
-    //利用测试集进行一次聚类，计算DBI
+    // Compute DBI by testdata
     DBI(int k, List<ArrayList<Double>> centers ,int miniBatchNum) throws IOException {
 
         DBI.updateDataListRandom(miniBatchNum);
@@ -82,14 +75,11 @@ class DBI{
         helpCenterList = initHelpCenterList(helpCenterList, k);
         List<ArrayList<Double>> newCenters = new ArrayList<ArrayList<Double>>();
 
-        //标注每一条记录所属的中心
         for(int i=0; i<dataList.size(); i++){
             double minDistance = 999999999;
             int centerIndex = -1;
-            //离0-k之间哪个中心最近
             for(int j=0; j<k; j++){
                 double currentDistance = 0;
-                //计算两点之间的欧式距离
                 for (int t=0; t<centers.get(0).size(); t++){
                     currentDistance += (centers.get(j).get(t)-dataList.get(i).get(t)) * (centers.get(j).get(t)-dataList.get(i).get(t));
                 }
@@ -102,10 +92,9 @@ class DBI{
             helpCenterList.get(centerIndex).add(dataList.get(i));
         }
 
-        //计算k个新的聚类中心
         for (int i=0; i<k; i++) {
             ArrayList<Double> tmp = new ArrayList<>();
-            for (int j=0; j<centers.get(0).size(); j++) { //j=0 用到了第一维的数据
+            for (int j=0; j<centers.get(0).size(); j++) {
                 double sum = 0;
                 for (int t=0; t<helpCenterList.get(i).size(); t++){
                     sum += helpCenterList.get(i).get(t).get(j);
@@ -114,8 +103,6 @@ class DBI{
             }
             newCenters.add(tmp);
         }
-
-        //计算DBI
         Dbi=computeDBI(newCenters,helpCenterList);
 
     }

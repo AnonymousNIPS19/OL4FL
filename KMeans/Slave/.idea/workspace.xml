@@ -6,7 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fc6da-d99a-4959-9871-2f090e7cd708" name="Default Changelist" comment="" />
+    <list default="true" id="af0fc6da-d99a-4959-9871-2f090e7cd708" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/F1measure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/F1measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/F1score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncDBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncDBI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterAsyncKUBE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterKUBE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMasterKUBE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/KMeansMastercost.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/KMeansMastercost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/MServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/MServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EC_Master/src/communication/mserver/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KMeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KMeansSlave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMeansSlave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SSE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/utils/Para.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/utils/Para.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,14 +145,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-38325156">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="448" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="448" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/KMeansSlave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="379">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,13 +189,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DBI.java">
+        <entry file="file://$PROJECT_DIR$/src/communication/mclient/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="180">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-671">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -157,8 +230,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/KMeans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="420">
+              <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,6 +265,9 @@
       <find>state</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -202,7 +278,6 @@
         <option value="$PROJECT_DIR$/src/communication/client/ClientMain.java" />
         <option value="$PROJECT_DIR$/src/communication/utils/ParaMtoS.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/SSE.java" />
         <option value="$PROJECT_DIR$/src/communication/client/Client.java" />
         <option value="$PROJECT_DIR$/src/communication/server/Server.java" />
         <option value="$PROJECT_DIR$/src/middle.java" />
@@ -210,11 +285,13 @@
         <option value="$PROJECT_DIR$/src/KMeansDBI.java" />
         <option value="$PROJECT_DIR$/src/communication/utils/ParaStoM.java" />
         <option value="$PROJECT_DIR$/src/KMeansSlaveDBI.java" />
-        <option value="$PROJECT_DIR$/src/communication/utils/Para.java" />
         <option value="$PROJECT_DIR$/src/communication/mclient/MClient.java" />
-        <option value="$PROJECT_DIR$/src/DBI.java" />
         <option value="$PROJECT_DIR$/src/KMeans.java" />
+        <option value="$PROJECT_DIR$/src/DBI.java" />
+        <option value="$PROJECT_DIR$/src/SSE.java" />
         <option value="$PROJECT_DIR$/src/KMeansSlave.java" />
+        <option value="$PROJECT_DIR$/src/communication/mclient/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/communication/utils/Para.java" />
       </list>
     </option>
   </component>
@@ -230,40 +307,47 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="276" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="1006" />
+    <option name="width" value="1166" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Slave01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Slave01" type="462c0819:PsiDirectoryNode" />
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Slave01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Slave01" type="462c0819:PsiDirectoryNode" />
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Slave01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Slave01" type="462c0819:PsiDirectoryNode" />
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="communication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Slave01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Slave01" type="462c0819:PsiDirectoryNode" />
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+              <item name="mclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Slave" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Slave" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="communication" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
@@ -272,6 +356,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,17 +558,18 @@
       <workItem from="1558598037011" duration="12575000" />
       <workItem from="1558682410215" duration="1187000" />
       <workItem from="1558688012114" duration="75000" />
+      <workItem from="1558753512745" duration="2403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218875000" />
+    <option name="totallyTimeSpent" value="221278000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="276" y="27" width="1006" height="900" extended-state="4" />
+    <frame x="67" y="25" width="1849" height="902" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2053942" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110680684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -492,7 +578,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22938144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22938144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -565,13 +651,6 @@
     <entry file="file://$PROJECT_DIR$/src/s12_test.txt" />
     <entry file="file://$PROJECT_DIR$/src/time1.txt" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/SSE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/io/ObjectInputStream.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -607,95 +686,66 @@
     <entry file="file://$PROJECT_DIR$/src/middle.java" />
     <entry file="file://$PROJECT_DIR$/src/KMeansSlaveDBI.java" />
     <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaStoM.java" />
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaMtoS.java" />
+    <entry file="file://$PROJECT_DIR$/src/DBI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1766#1767#0" expanded="true" />
-            <element signature="e#1796#1797#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1890#1891#0" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-            <element signature="e#2020#2021#0" expanded="true" />
-            <element signature="e#2056#2057#0" expanded="true" />
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2206#2207#0" expanded="true" />
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2350#2351#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+    <entry file="file://$PROJECT_DIR$/src/SSE.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/mclient/MClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/communication/mclient/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/communication/utils/ParaMtoS.java" />
-    <entry file="file://$PROJECT_DIR$/src/DBI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="180">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/Para.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-671">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/communication/utils/JsonDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeansSlave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="379">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -704,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/KMeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-851">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="420">
+          <caret line="76" column="4" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

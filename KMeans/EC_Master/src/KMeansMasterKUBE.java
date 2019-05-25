@@ -132,8 +132,8 @@ public class KMeansMasterKUBE {
             DBI test=new DBI(test_center, kmean.getHelpCenterList());
             DBI.add(test.dbi);
             //f1f1f1
-            F1measure f1measure=new F1measure(kmean.train_target,kmean.predict_target);
-            f1.add(f1measure.f1);
+            F1score f1Score =new F1score(kmean.train_target,kmean.predict_target);
+            f1.add(f1Score.f1);
 
 
             if( isFirst ){

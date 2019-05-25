@@ -1,14 +1,13 @@
 import java.io.FileNotFoundException;
 import java.util.*;
 
-class F1measure {
+class F1score {
     double f1;
     double getf1(){return f1;}
 
     double[] LineMax(double data[][], int line, int column){
         int i = 0;
         int j = 0;
-        System.out.println("\ncolumn:"+ column);
         double[] result=new double[line];
         double max = 0;
         for (i = 0; i < line; i++)    {
@@ -20,21 +19,18 @@ class F1measure {
                 }
             }
             result[i] = max;
-            max = 0;  // 最大值复位，以免上一次比较照成的错误
+            max = 0;
         }
         return result;
     }
 
 
-    F1measure(Map<Integer, Integer> train_target, Map<Integer, Integer> predict_target) throws FileNotFoundException {
+    F1score(Map<Integer, Integer> train_target, Map<Integer, Integer> predict_target) throws FileNotFoundException {
 
         Set<Integer> train_set = new HashSet<Integer>(train_target.values());
         ArrayList<Integer> target = new ArrayList<>(train_set);
         Set<Integer> predict_set = new HashSet<Integer>(predict_target.values());
         ArrayList<Integer> p_target = new ArrayList<>(predict_set);
-//        System.out.println("\npredict_count:"+ train_set);
-//        System.out.println("\npredict_count:"+ predict_set);
-
 
         int[][] TP = new int[train_set.size()][predict_set.size()];
 
@@ -42,9 +38,7 @@ class F1measure {
         Map<Integer, Integer> train_Key = new HashMap<Integer, Integer>();
         Map<Integer, Integer> train_Value = new HashMap<Integer, Integer>();
         for(Map.Entry<Integer, Integer> entry : train_target.entrySet()) {
-            //将原来MAP的VALUE放入新的MAP的VALUE里面
             train_Value.put(index, entry.getValue());
-            //将原来MAP的KEY放入新的MAP的VALUE 里面
             train_Key.put(index, entry.getKey());
             index++;
 
@@ -54,9 +48,7 @@ class F1measure {
         Map<Integer, Integer> predict_Key = new HashMap<Integer, Integer>();
         Map<Integer, Integer> predict_Value = new HashMap<Integer, Integer>();
         for(Map.Entry<Integer, Integer> p_entry : predict_target.entrySet()) {
-            //将原来MAP的VALUE放入新的MAP的VALUE里面
             predict_Value.put(p_index, p_entry.getValue());
-            //将原来MAP的KEY放入新的MAP的VALUE 里面
             predict_Key.put(p_index, p_entry.getKey());
             p_index++;
 
@@ -93,8 +85,6 @@ class F1measure {
         System.out.println(Arrays.toString(train_count));
         System.out.println(Arrays.toString(predict_count));
 
-
-//
 //        System.out.println("\npredict_count:"+ Arrays.toString(predict_count));
 //        System.out.println("\ntrain_count:"+ Arrays.toString(train_count));
 
@@ -121,24 +111,13 @@ class F1measure {
 
         for(int i=0;i<train_set.size();i++){
             f1=f1+f1max[i]*train_count[i];
-
-//            f2=f2+f1max[i];
         }
         f1=f1/train_target.size();
 
         for (int i = 0; i < train_set.size(); i++) {
-            System.out.println("\nf1max:" + f1max[i]);
             for (int j = 0; j < predict_set.size(); j++) {
-//                System.out.println("\nTP:" + TP[i][j]);
-//                System.out.println("\nrecall:"+ recall[i][j]);
-//                System.out.println("\nprecision:"+ precision[i][j]);
-//                System.out.println("\nf1measure:"+ f1measure[i][j]);
             }
         }
-//        System.out.println("\nf1:"+f1);
-//        System.out.println("\nf2:"+f2);
-
-
 
     }
 
